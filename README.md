@@ -1,0 +1,2 @@
+# Kana-Client
+KanaのElectronクライアントアプリ
