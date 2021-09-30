@@ -1,11 +1,18 @@
 //Bing 今日の画像
-fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(res => res.json()).then(data => {
+/*fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(res => res.json()).then(data => {
     var url = data.images[0].url;
     if (data.images[0].url.startsWith("/")) url = "https://bing.com" + data.images[0].url;
     document.body.style.backgroundImage = `url("${url}")`;
     document.getElementById("background_copyright").innerHTML = data.images[0].copyright.replace(/, /, "<br>");
     document.getElementById("background_copyright").setAttribute("href", data.images[0].copyrightlink);
-});
+}).catch(error => {
+    console.error(error);
+    document.getElementById("background_copyright").remove();
+    document.body.style.backgroundImage = `url("./background.svg")`;
+});*/
+
+document.getElementById("background_copyright").remove();
+document.body.style.backgroundImage = `url("./background.svg")`;
 
 //ヘルプアイテムの押されたときのやつ
 $(".help_item")[0].onclick = () => {
@@ -48,7 +55,7 @@ function send() {
         if (typeof data == "object") {
             $("#welcome")[0].style.display = "none";
             $("#reply")[0].innerHTML = data.reply.replace(/\n/g, "<br>");
-            $("#input")[0].value = "";
+            //$("#input")[0].value = "";
         } else {
             console.error(data);
             $("#welcome")[0].style.display = "none";
