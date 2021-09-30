@@ -4,9 +4,9 @@ const path = require("path");
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: screen.getPrimaryDisplay().size.width/1.2,
-    minWidth: 400,
+    minWidth: 480,
     height: screen.getPrimaryDisplay().size.height/1.2,
-    minHeight: 360,
+    minHeight: 640,
     title: "Kana",
     backgroundColor:"#808080",
     autoHideMenuBar: true,
