@@ -1,5 +1,5 @@
 //Bing 今日の画像
-/*fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(res => res.json()).then(data => {
+fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(res => res.json()).then(data => {
     var url = data.images[0].url;
     if (data.images[0].url.startsWith("/")) url = "https://bing.com" + data.images[0].url;
     document.body.style.backgroundImage = `url("${url}")`;
@@ -9,10 +9,9 @@
     console.error(error);
     document.getElementById("background_copyright").remove();
     document.body.style.backgroundImage = `url("./background.svg")`;
-});*/
+});
 
-document.getElementById("background_copyright").remove();
-document.body.style.backgroundImage = `url("./background.svg")`;
+
 
 //ヘルプアイテムの押されたときのやつ
 $(".help_item")[0].onclick = () => {
