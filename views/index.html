@@ -12,30 +12,31 @@
 
 <body>
     <div class="container" id="main">
-        <div class="input">
+        <div class="input" style="position: -webkit-sticky; position: sticky; top: 16px; z-index: 3000; display:block;">
             <input type="text" id="input" maxlength="100" placeholder="&#xf78b; ここからKanaに質問できます">
         </div>
-        <span style="font-size: 1.8em; font-weight: 600; margin: 2em auto;" id="welcome">Kanaへようこそ</span>
-        <div class="container" id="help_tile">
-            試してみよう
-            <br>
-            <div class="help_tile">
-                <div class="container help_item">
-                    Kanaと話す
-                </div>
-                <div class="container help_item">
-                    5分間タイマー
-                </div>
-                <div id="tile_kaigyou"></div>
-                <div class="container help_item">
-                    <span id="wikipedia_random">Kana</span>を調べる
-                </div>
-                <div class="container help_item">
-                    2^6を計算
+        <span style="font-size: 1.8em; font-weight: 600; margin: 0 auto; height: 2em;" id="welcome">Kanaへようこそ</span>
+        <span id="reply" class="container">
+            <div id="help_tile">
+                試してみよう
+                <br>
+                <div class="help_tile">
+                    <div class="container help_item">
+                        Kanaと話す
+                    </div>
+                    <div class="container help_item">
+                        5分間タイマー
+                    </div>
+                    <div id="tile_kaigyou"></div>
+                    <div class="container help_item">
+                        <span id="wikipedia_random">Kana</span>を調べる
+                    </div>
+                    <div class="container help_item">
+                        2^6を計算
+                    </div>
                 </div>
             </div>
-        </div>
-        <span id="reply" class="container"></span>
+        </span>
         <div id="logout_btn" style="font-family: 'Segoe Fluent Icons';" class="container">&#xf3b1;</div>
     </div>
     <div id="login_ui" class="container">

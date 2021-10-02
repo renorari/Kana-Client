@@ -70,6 +70,7 @@ h6 {
     flex-grow: 1;
 }
 
+/*
 .container::before {
     content: '';
     position: absolute;
@@ -82,6 +83,7 @@ h6 {
     filter: opacity(50%);
     border-radius: 8px;
 }
+*/
 
 .container:empty {
     display: none;
@@ -157,6 +159,9 @@ h6 {
 
 #main {
     z-index: 1000;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 #login_ui {
@@ -201,6 +206,22 @@ h6 {
 
 #reply {
     display: block;
+    overflow-y:scroll;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: var(--text_a);
 }
 
 #reply:empty {
