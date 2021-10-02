@@ -83,6 +83,12 @@ h6 {
     border-radius: 8px;
 }
 
+@-moz-document url-prefix() {
+    .container::before {
+        display: none;
+    }
+}
+
 .container:empty {
     display: none;
 }
@@ -204,7 +210,7 @@ h6 {
 
 #reply {
     display: block;
-    overflow-y:scroll;
+    overflow-y: scroll;
     height: 100%;
 }
 
