@@ -1,22 +1,31 @@
+/*
+    Kana Client
+    Version 0.0.1
+    KanaのElectronクライアントアプリ
+*/
+
 //Bing 今日の画像
+//もしくはデフォルト背景
 fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(res => res.json()).then(data => {
+    //Bing 今日の画像
     var url = data.images[0].url;
     if (data.images[0].url.startsWith("/")) url = "https://bing.com" + data.images[0].url;
     document.body.style.backgroundImage = `url("${url}")`;
     document.getElementById("background_copyright").innerHTML = data.images[0].copyright.replace(/, /, "<br>");
     document.getElementById("background_copyright").setAttribute("href", data.images[0].copyrightlink);
 }).catch(error => {
+    //デフォルト背景
     console.error(error);
     document.getElementById("background_copyright").remove();
     document.body.style.backgroundImage = `url("./background.svg")`;
 });
 
 window.onload = () => {
-    console.log("regtdg")
+    //よみこみ画面非表示
     $("#loading").fadeOut(1000);
 };
 
-//ヘルプアイテムの押されたときのやつ
+//ヘルプアイテム
 $(".help_item")[0].onclick = () => {
     $("input")[0].value = "こんにちは";
     send();
@@ -33,10 +42,10 @@ $(".help_item")[3].onclick = () => {
     $("input")[0].value = "2^6を計算して";
     send();
 };
-
+//awaitで待つやつ(簡易版)
 var wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-//必要なやつ（）
+//必要なやつ
 var url = "https://kana.renorari.net/api/api.json";
 var userid = "";
 var password = "";
@@ -98,6 +107,7 @@ function login(t_id, t_password) {
         $("#login_status")[0].innerHTML = "ログインに失敗しました。<br>エラー: " + error.replace(/\n/g, "<br>");
     });
 };
+//ログアウト
 $("#logout_btn")[0].onclick = () => logout();
 async function logout() {
     userid = "";
@@ -108,6 +118,7 @@ async function logout() {
     $("#login_status")[0].innerHTML = "Kanaを利用するには、ログインが必要です。";
 };
 
+//ログイン情報読み込み
 if (localStorage.getItem("login_info")) {
     $("#login_id")[0].value = JSON.parse(localStorage.getItem("login_info")).userid;
     $("#login_password")[0].value = JSON.parse(localStorage.getItem("login_info")).password;
