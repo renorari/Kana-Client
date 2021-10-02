@@ -11,7 +11,10 @@ fetch("https://www.bing.com/HPImageArchive.aspx?format=js&n=1&mkt=ja-JP").then(r
     document.body.style.backgroundImage = `url("./background.svg")`;
 });
 
-
+window.onload = () => {
+    console.log("regtdg")
+    $("#loading").fadeOut(1000);
+};
 
 //ヘルプアイテムの押されたときのやつ
 $(".help_item")[0].onclick = () => {
