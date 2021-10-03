@@ -13,7 +13,7 @@ confinement: strict
 
 apps:
     kana:
-        command: kana/kana --no-sandbox
+        command: Kana-Client/kana --no-sandbox
         extensions: [gnome-3-34]
         plugs:
             - browser-support
@@ -31,10 +31,10 @@ parts:
             export GLOBAL_AGENT_HTTP_PROXY="${http_proxy}"
             export GLOBAL_AGENT_HTTPS_PROXY="${http_proxy}"
             npm install
-            npx electron-builder -l
+            npm run build
             cp -rv dist/linux-* $SNAPCRAFT_PART_INSTALL/kana
         build-snaps:
-            - node/14/stable
+            - node/16/stable
         build-packages:
             - unzip
         stage-packages:
