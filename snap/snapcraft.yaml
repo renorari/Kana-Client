@@ -34,7 +34,7 @@ parts:
             npm run build
             cp -rv dist/linux-* $SNAPCRAFT_PART_INSTALL/kana
         build-snaps:
-            - node/16/stable
+            - node/14/stable
         build-packages:
             - unzip
         stage-packages:
