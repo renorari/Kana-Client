@@ -13,7 +13,7 @@
     },
     "build": {
         "appId": "renorari.kana",
-        "productName": "Kana Client",
+        "productName": "kana",
         "copyright": "(c) 2021 れのらり",
         "files": [
             "package.json",
