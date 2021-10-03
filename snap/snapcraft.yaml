@@ -13,7 +13,7 @@ confinement: strict
 
 apps:
     kana:
-        command: "kana/kana --no-sandbox"
+        command: "ls kana"
         extensions: [gnome-3-28]
         plugs:
             - browser-support
