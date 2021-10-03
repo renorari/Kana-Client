@@ -6,4 +6,3 @@ Comment="あなたのアシスタントKanaがあなたへお手伝いをしま�
 Exec=kana
 Icon=${SNAP}/meta/gui/icon.png
 Terminal=false
-Categories=Entertainment,Utilities

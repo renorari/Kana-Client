@@ -43,5 +43,8 @@
     "bugs": {
         "url": "https://github.com/TarochanChannel/Kana-Client/issues"
     },
-    "homepage": "https://github.com/TarochanChannel/Kana-Client#readme"
+    "homepage": "https://github.com/TarochanChannel/Kana-Client#readme",
+    "dependencies": {
+        "electron-packager": "^15.4.0"
+    }
 }

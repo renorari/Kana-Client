@@ -30,8 +30,9 @@ parts:
             export ELECTRON_GET_USE_PROXY=1
             export GLOBAL_AGENT_HTTP_PROXY="${http_proxy}"
             export GLOBAL_AGENT_HTTPS_PROXY="${http_proxy}"
-            npm install
-            npx electron-builder -l
+            npm install electron electron-packager
+            npx electron-packager . --overwrite --platform=linux --output=release-build --prune=true
+            cp -rv ./kana-linux-* $SNAPCRAFT_PART_INSTALL/kana
             cp -rv dist/linux-* $SNAPCRAFT_PART_INSTALL/kana
         build-snaps:
             - node/14/stable
