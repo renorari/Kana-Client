@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Kana
+Comment="あなたのアシスタントKanaがあなたへお手伝いをします。"
+Exec=kana
+Icon=${SNAP}/meta/gui/icon.png
+Terminal=false
+Categories=Entertainment,Utilities
