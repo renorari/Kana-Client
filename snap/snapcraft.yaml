@@ -14,7 +14,7 @@ confinement: strict
 apps:
     kana:
         command: "kana/Kana Client --no-sandbox"
-        extensions: [gnome-3-34]
+        extensions: [gnome-3-28]
         plugs:
             - browser-support
             - network
