@@ -1,3 +1,9 @@
+/*
+    Kana Client
+    Version 0.0.1
+    KanaのElectronクライアントアプリ
+*/
+
 const { app, BrowserWindow, Menu, shell, screen } = require("electron");
 const path = require("path");
 
@@ -8,8 +14,9 @@ function createWindow() {
         height: screen.getPrimaryDisplay().size.height / 1.2,
         minHeight: 640,
         title: "Kana",
-        backgroundColor: "#808080",
+        backgroundColor: "#000000",
         autoHideMenuBar: true,
+        icon: "icons/icon.png",
         webPreferences: {
             preload: path.join(__dirname, "preload.js")
         },
@@ -24,9 +31,9 @@ function createWindow() {
     mainWindow.webContents.on('new-window', openExternalLinksInOSBrowser);
     mainWindow.webContents.on('will-navigate', openExternalLinksInOSBrowser);
     mainWindow.setMenu(Menu.buildFromTemplate([]));
-    mainWindow.loadFile("views/index.html");
+    mainWindow.loadURL("https://kana.renorari.net/app/");
 
-    mainWindow.webContents.openDevTools();
+    //mainWindow.webContents.openDevTools();
 }
 
 app.whenReady().then(() => {
