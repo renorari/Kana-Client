@@ -13,7 +13,7 @@ confinement: strict
 
 apps:
     kana:
-        command: bin/desktop-launch $SNAP/app/kana
+        command: bin/desktop-launch $SNAP/kana/kana
         extensions: [gnome-3-28]
         plugs:
             - browser-support
