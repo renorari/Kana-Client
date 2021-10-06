@@ -15,6 +15,19 @@ icon: "snap/gui/icon.png"
 license: "Apache-2.0"
 grade: stable
 
+architectures:
+    - build-on: amd64
+      run-on: amd64
+
+    - build-on: i386
+      run-on: i386
+      
+    - build-on: arm64
+      run-on: arm64
+      
+    - build-on: amd64
+      run-on: armhf
+
 apps:
     kana:
         command: $SNAP/app/kana-client --no-sandbox
