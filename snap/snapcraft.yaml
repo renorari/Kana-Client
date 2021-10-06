@@ -1,12 +1,19 @@
 name: kana
+title: "Kana"
 base: core18
 version: "0.0.1"
+contact: "https://kana.renorari.net/support/"
+issues: "https://github.com/TarochanChannel/Kana-Client/issues"
+source-code: "https://github.com/TarochanChannel/Kana-Client.git"
+website: "https://kana.renorari.net/"
 summary: KanaのElectronクライアントアプリ
 description: |
     Kana-Client
     KanaのElectronクライアントアプリ
-grade: stable
 confinement: strict
+icon: "snap/gui/iconfiles/icon.png"
+license: "Apache-2.0"
+grade: stable
 
 apps:
     kana:
@@ -28,7 +35,7 @@ parts:
             export GLOBAL_AGENT_HTTP_PROXY="${http_proxy}"
             export GLOBAL_AGENT_HTTPS_PROXY="${http_proxy}"
             npm install
-            npx electron-builder -l
+            npx electron-builder -l --dir
             cp -rv dist/linux-* $SNAPCRAFT_PART_INSTALL/app
         build-snaps:
             - node/14/stable
