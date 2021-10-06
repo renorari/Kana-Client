@@ -1,7 +1,7 @@
 {
     "name": "kana-client",
     "version": "0.0.1",
-    "description": "KanaのElectronクライアントアプリ",
+    "description": "あなたのアシスタントのKanaがあなたへお手伝いをします。",
     "main": "index.js",
     "devDependencies": {
         "electron": "^14.0.0",
