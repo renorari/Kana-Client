@@ -6,7 +6,7 @@ contact: "https://kana.renorari.net/support/"
 issues: "https://github.com/TarochanChannel/Kana-Client/issues"
 source-code: "https://github.com/TarochanChannel/Kana-Client.git"
 website: "https://kana.renorari.net/"
-summary: KanaのElectronクライアントアプリ
+summary: "KanaのElectronクライアント"
 description: |
     Kana-Client
     KanaのElectronクライアントアプリ
