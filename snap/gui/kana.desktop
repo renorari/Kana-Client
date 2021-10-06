@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Encoding=UTF-8
-Name=Kana
-Comment="あなたのアシスタントKanaがあなたへお手伝いをします。"
-Exec=kana
-Icon=${SNAP}/meta/gui/iconfiles/icon.png
-Terminal=false
