@@ -1,13 +1,10 @@
 name: kana
-title: "Kana"
 base: core18
 version: "0.0.1"
-license: "Apache License 2.0"
 summary: KanaのElectronクライアントアプリ
 description: |
     Kana-Client
     KanaのElectronクライアントアプリ
-icon: "icon.svg"
 grade: stable
 confinement: strict
 
