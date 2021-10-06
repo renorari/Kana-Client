@@ -34,7 +34,7 @@ parts:
             export ELECTRON_GET_USE_PROXY=1
             export GLOBAL_AGENT_HTTP_PROXY="${http_proxy}"
             export GLOBAL_AGENT_HTTPS_PROXY="${http_proxy}"
-            npm install
+            npm i
             npx electron-builder -l --dir
             cp -rv dist/linux-* $SNAPCRAFT_PART_INSTALL/app
         build-snaps:
