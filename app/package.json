@@ -14,13 +14,14 @@
     "build": {
         "appId": "renorari.kana",
         "productName": "kana",
+        "icon": "iconfiles/icon.png",
         "copyright": "(c) 2021 れのらり",
         "files": [
             "package.json",
             "index.js",
             "preload.js",
             "icon.ico",
-            "icons/*"
+            "iconfiles/*"
         ],
         "win": {
             "icon": "icon.ico"

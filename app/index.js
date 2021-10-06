@@ -16,7 +16,7 @@ function createWindow() {
         title: "Kana",
         backgroundColor: "#000000",
         autoHideMenuBar: true,
-        icon: "icons/icon.png",
+        icon: "iconfiles/icon.png",
         webPreferences: {
             preload: path.join(__dirname, "preload.js")
         },
