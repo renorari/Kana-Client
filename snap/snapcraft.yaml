@@ -1,7 +1,7 @@
 name: "kana"
 title: "Kana"
 base: core18
-version: "0.0.1.1"
+version: "0.0.1.2"
 contact: "https://kana.renorari.net/support/"
 issues: "https://github.com/TarochanChannel/Kana-Client/issues"
 source-code: "https://github.com/TarochanChannel/Kana-Client.git"
