@@ -11,7 +11,7 @@ description: |
     __Kana-Client__
     あなたのアシスタントのKanaがあなたへお手伝いをします。
 confinement: strict
-#icon: "snap/gui/icon.png"
+icon: "snap/gui/icon.png"
 license: "Apache-2.0"
 grade: stable
 
