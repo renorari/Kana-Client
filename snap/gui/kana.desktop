@@ -1,8 +1,10 @@
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
+Version=0.0.1.1
 Name=Kana
-Comment="あなたのアシスタントのKanaがあなたへお手伝いをします。"
+Comment=あなたのアシスタントのKanaがあなたへお手伝いをします。
 Exec=kana
 Icon=${SNAP}/meta/gui/icon.png
 Terminal=false
+Categories=Network;Chat;
