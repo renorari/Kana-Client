@@ -4,5 +4,5 @@ Encoding=UTF-8
 Name=Kana
 Comment="あなたのアシスタントのKanaがあなたへお手伝いをします。"
 Exec=kana
-Icon=${SNAP}/meta/gui/iconfiles/icon.png
+Icon=${SNAP}/meta/gui/icon.png
 Terminal=false
